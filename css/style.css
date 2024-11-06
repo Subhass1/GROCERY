@@ -11,7 +11,15 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5rem 0 5rem;
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    position: relative;
+}
+
+.background_videos{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .header-section .logo {
@@ -30,6 +38,7 @@ html {
 
     & h1 {
         font-size: 2rem;
+        color: #fff;
     }
 }
 
@@ -47,7 +56,7 @@ html {
         text-decoration: none;
         font-size: 2rem;
         font-weight: 500;
-        color: #000;
+        color: #fff;
     }
 }
 
@@ -86,4 +95,14 @@ html {
     background-color: #fff;
     color: #000;
     }
+}
+
+
+@media (max-aspect-ratio: 16/9){
+
+    .background_videos{
+        width: 100%;
+    height: auto;
+    }
+    
 }
