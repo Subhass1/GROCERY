@@ -7,12 +7,40 @@ html {
     font-size: 62.5%;
 }
 
+
+button{
+    padding: 1.5rem 5rem 1.5rem 5rem;
+    border-radius: 8rem;
+    -webkit-border-radius: 8rem;
+    -moz-border-radius: 8rem;
+    -ms-border-radius: 8rem;
+    -o-border-radius: 8rem;
+    font-size: 2rem;
+    background-color: #2A7B4C;
+    border: none;
+    color: #fff;
+}
+
+button:hover{
+    background: #fff;
+    color: #000;
+    border: 2px solid #2A7B4C;
+    -webkit-border: 2px solid #2A7B4C;
+    -moz-border: 2px solid #2A7B4C;
+    -ms-border: 2px solid #2A7B4C;
+    -o-border: 2px solid #2A7B4C;
+}
+
+.header-Home_section{
+    width: 100%;
+    height: 100vh;
+}
 .header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5rem 1.5rem 5rem;
-    position: relative;
+    
 }
 
 .background_videos{
@@ -77,16 +105,21 @@ html {
         align-items: center;
         justify-content: center;
         background-color: #2A7B4C;
-        padding: .5rem .5rem .5rem .5rem;
+        padding: .8rem .8rem .8rem .8rem;
         border-radius: .5rem;
         -webkit-border-radius: .5rem;
         -moz-border-radius: .5rem;
         -ms-border-radius: .5rem;
         -o-border-radius: .5rem;
         color: #fff;
-        /* border: 2px solid #2A7B4C; */
-        font-size: 2rem;
-    }
+        /*border: 2px solid #2A7B4C;
+        */font-size: 2rem;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+}
 
     .Search-item:hover,
     .Shopping-cart:hover,
@@ -95,6 +128,41 @@ html {
     background-color: #fff;
     color: #000;
     }
+}
+
+.heading-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15rem 20rem 10rem 20rem ;
+
+    & h1{
+        font-size: 6rem;
+        font-weight: bold;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+}
+
+    & h1:hover{
+        -webkit-text-stroke: 2px #000;
+        color: transparent;
+    }
+
+    & p{
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 25rem ;
+        padding-right: 25rem;
+        padding-top: 2rem;
+    }
+
+    
 }
 
 
